@@ -1,3 +1,10 @@
+@font-face {
+    font-family: Graphik-Medium;
+    src: url(../fonts/Graphik-Medium.woff);
+}
+* {
+  font-family: Graphik-Medium, sans-serif;
+}
 body {
   background-color: #f8f8f8;
 }
@@ -5,37 +12,52 @@ body {
 img {
   width: 100%;
 }
+select {
+  width: 100%;
+  display: block;
+  font-weight: 400;
+  padding: 6.66667px 30px;
+  padding-left: 6px;
+  padding-right: 0;
+  text-indent: .01px;
+  text-overflow: "";
+  background: transparent;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  min-height: 30px;
+  background: transparent url(//res.cloudinary.com/ssenseweb/image/upload/v1422551406/web/dropdow-arrow-2xmargin-right.png) 100% no-repeat;
+  background-size: 16px;
+  cursor: pointer;
+}
+input {
+  opacity: 0;
+}
 
+/* Main Product image styles */
 .product-container {
   background-color: #f8f8f8;
   height: 100vh;
   min-height: 700px;
   margin-bottom: 5%;
 }
-
-.related-container {
-  background-color: white;
-  position: absolute;
-  top: 3000px;
-}
 .product-description {
   display: table;
   height: inherit;
 }
-
 .product-row {
   height: inherit;
 }
-
 .v-center {
   display: table-cell;
   vertical-align: middle;
 }
-
-.image-row {
-  margin-top: 30px;
-}
-
 .fixed-cols {
   position: fixed;
   width: 33.33333%
@@ -44,18 +66,42 @@ img {
   height: 100%;
   left: 0;
 }
-
 .img-col {
   height: 100%;
   left: 33.3333%;
-
 }
-
 .form-col {
   height: 100%;
   left: 66.6666%;
 }
+.colors-div {
+  border: 1px solid black;
+  display: inline;
+}
+.colors-div * {
+  display: inline;
+}
 
+.color-beige {
+  background-color: #fddbb7;
+}
+
+.color-black {
+  background-color: black;
+  color: white;
+}
+
+/* Related products styles */
+.related-container {
+  background-color: white;
+  position: absolute;
+  top: 4200px;
+}
+.image-row {
+  margin-top: 30px;
+}
+
+/* Mobile Styles */
 .mobile-product-container {
   display: none;
 }

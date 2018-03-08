@@ -25,7 +25,7 @@
             <div><img src="images/top-section/highwaist_black_back_1024x1024.jpg" alt=""></div>
           </div>
         </div>
-        <div class="col-sm-3 col-sm-offset-1 col-xs-12">
+        <div class="col-sm-4 col-sm-offset-1 col-xs-12">
           <div class="product-description">
             <div class="v-center">
               <p>HI WAIST</p>
@@ -40,9 +40,11 @@
               <p>$35.00</p>
               <form>
                 <div>
+
                   <label for="color">
                     <input type="radio" name="black" value="black">
                   </label>
+
                   <label for="color">
                     <input type="radio" name="beige" value="beige">
                   </label>
@@ -70,7 +72,7 @@
     </div>
     <div class="container-fluid product-container">
       <div class="row product-row">
-        <div class="col-sm-3 col-xs-12 text-col fixed-cols">
+        <div class="col-sm-3 col-sm-offset-1 col-xs-12 text-col fixed-cols">
           <div class="product-description">
             <div class="v-center">
               <p>HI WAIST</p>
@@ -80,29 +82,47 @@
           </div>
         </div>
         <div class="col-sm-4 col-xs-12 img-col">
-          <img src="images/top-section/highwaist_black_front_1024x1024.jpg" alt="">
-          <img src="images/top-section/highwaist_black_front_2_1024x1024.jpg" alt="">
-          <img src="images/top-section/highwaist_black_front_3_1024x1024.jpg" alt="">
-          <img src="images/top-section/highwaist_black_front_4_1024x1024.jpg" alt="">
-          <img src="images/top-section/highwaist_black_side_1024x1024.jpg" alt="">
-          <img src="images/top-section/highwaist_black_back_1024x1024.jpg" alt="">
+          <div><img src="images/top-section/highwaist_black_front_1024x1024.jpg" alt=""></div>
+          <div><img src="images/top-section/highwaist_black_front_2_1024x1024.jpg" alt=""></div>
+          <div><img src="images/top-section/highwaist_black_front_3_1024x1024.jpg" alt=""></div>
+          <div><img src="images/top-section/highwaist_black_front_4_1024x1024.jpg" alt=""></div>
+          <div><img src="images/top-section/highwaist_black_side_1024x1024.jpg" alt=""></div>
+          <div><img src="images/top-section/highwaist_black_back_1024x1024.jpg" alt=""></div>
         </div>
         <div class="col-sm-4 col-xs-12 form-col fixed-cols">
           <div class="product-description">
             <div class="v-center">
               <p>$35.00</p>
               <form>
-                <div>
-                  <label for="color">Color</label>
-                  <input type="radio" name="color" value="black">
-                  <input type="radio" name="color" value="beige">
+                <div class="row col-xs-12">
+                  <div class="color colors-div col-xs-4">
+                    <p>color</p>
+                  </div>
+                  <label for="black" class="col-xs-4  colors-div color-black">
+                  <div>
+                    <p>black</p>
+                    <input type="radio" name="black" value="black">
+                  </div>
+                </label>
+                  <label for="beige" class="col-xs-4  colors-div color-beige">
+                    <div>
+                      <p>beige</p>
+                      <input type="radio" name="beige" value="beige">
+                    </div>
+                  </label>
                 </div>
-                <div>
-                  <p>+</p>
-                  <p>quantity (<span id="quantity">1</span>)</p>
-                  <p>-</p>
+                <div class="row col-xs-12">
+                  <div class="colors-div col-xs-3">
+                    <p>+</p>
+                  </div>
+                  <div class="colors-div col-xs-6">
+                    <p>quantity (<span id="quantity">1</span>)</p>
+                  </div>
+                  <div class="colors-div col-xs-3">
+                    <p>-</p>
+                  </div>
                 </div>
-                <div class="">
+                <div class="row col-xs-12">
                   <select class="" name="size">
                     <option value="xs">Size</option>
                     <option value="xs">XS</option>

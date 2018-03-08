@@ -7,7 +7,3 @@ $(document).ready(function(){
     items: 1
   });
 });
-
-$('.owl-item').click(function () {
-  $(".owl-carousel").trigger('to.owl.carousel', [$(this).index(), 300]);
-});
