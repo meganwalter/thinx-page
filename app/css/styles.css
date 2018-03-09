@@ -4,6 +4,7 @@
 }
 * {
   font-family: Graphik-Medium, sans-serif;
+  letter-spacing: 1px;
 }
 body {
   background-color: #f8f8f8;
@@ -18,7 +19,6 @@ select {
   font-weight: 400;
   padding-left: 6px;
   padding-right: 0;
-  margin-top: 5px;
   text-indent: .01px;
   text-overflow: "";
   background: transparent;
@@ -50,6 +50,7 @@ button {
   background-color: black;
   color: white;
   text-align: center;
+  margin-top: 30px;
 }
 
 /* Main Product image styles */
@@ -72,7 +73,7 @@ button {
 }
 
 .v-center div {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .fixed-cols {
@@ -90,6 +91,7 @@ button {
 .img-col {
   height: max-content;
   left: 33.3333%;
+  margin-top: 2%;
 }
 .img-col div {
   height: 100vh;
@@ -232,4 +234,18 @@ button {
 }
 .owl-dots .owl-dot.active span,  .owl-dots .owl-dot:hover span {
   background: #869791
+}
+
+/* padding-bottom and top for image */
+.mfp-no-margins img.mfp-img {
+	padding: 0;
+}
+/* position of shadow behind the image */
+.mfp-no-margins .mfp-figure:after {
+	top: 0;
+	bottom: 0;
+}
+/* padding for main container */
+.mfp-no-margins .mfp-container {
+	padding: 0;
 }

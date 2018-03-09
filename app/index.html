@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     <link rel="stylesheet" href="owlcarousel/owl.theme.green.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+    <!-- Magnific Popup core JS file -->
+    <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
     <link href="css/styles.css" rel="stylesheet">
   </head>
   <body>
@@ -43,16 +47,16 @@
                   <div class="color colors-div col-xs-4">
                     <p>color</p>
                   </div>
-                  <label for="black" class="col-xs-4  colors-div color-black">
-                  <div>
-                    <p>black</p>
-                    <input type="radio" name="black" value="black" checked>
-                  </div>
-                </label>
-                  <label for="beige" class="col-xs-4  colors-div color-beige">
+                  <label for="colors" class="col-xs-4  colors-div color-black">
                     <div>
+                      <input type="radio" name="colors" value="black" checked>
+                      <p>black</p>
+                    </div>
+                  </label>
+                  <label for="colors" class="col-xs-4  colors-div color-beige">
+                    <div>
+                      <input type="radio" name="colors" value="beige">
                       <p>beige</p>
-                      <input type="radio" name="beige" value="beige">
                     </div>
                   </label>
                 </div>
@@ -104,12 +108,36 @@
           </div>
         </div>
         <div class="col-sm-4 col-xs-12 img-col">
-          <div><img src="images/top-section/highwaist_black_front_1024x1024.jpg" alt=""></div>
-          <div><img src="images/top-section/highwaist_black_front_2_1024x1024.jpg" alt=""></div>
-          <div><img src="images/top-section/highwaist_black_front_3_1024x1024.jpg" alt=""></div>
-          <div><img src="images/top-section/highwaist_black_front_4_1024x1024.jpg" alt=""></div>
-          <div><img src="images/top-section/highwaist_black_side_1024x1024.jpg" alt=""></div>
-          <div><img src="images/top-section/highwaist_black_back_1024x1024.jpg" alt=""></div>
+          <div>
+            <a class="image-popup-no-margins" href="images/top-section/highwaist_black_front_1024x1024.jpg">
+              <img src="images/top-section/highwaist_black_front_1024x1024.jpg" alt="">
+            </a>
+          </div>
+          <div>
+            <a class="image-popup-no-margins" href="images/top-section/highwaist_black_front_2_1024x1024.jpg">
+              <img class="image-popup-no-margins" src="images/top-section/highwaist_black_front_2_1024x1024.jpg" alt="">
+            </a>
+          </div>
+          <div>
+            <a class="image-popup-no-margins" href="images/top-section/highwaist_black_front_3_1024x1024.jpg">
+              <img class="image-popup-no-margins" src="images/top-section/highwaist_black_front_3_1024x1024.jpg" alt="">
+            </a>
+          </div>
+          <div>
+            <a class="image-popup-no-margins" href="images/top-section/highwaist_black_front_4_1024x1024.jpg">
+              <img class="image-popup-no-margins" src="images/top-section/highwaist_black_front_4_1024x1024.jpg" alt="">
+            </a>
+          </div>
+          <div>
+            <a class="image-popup-no-margins" href="images/top-section/highwaist_black_side_1024x1024.jpg">
+              <img class="image-popup-no-margins" src="images/top-section/highwaist_black_side_1024x1024.jpg" alt="">
+            </a>
+          </div>
+          <div>
+            <a class="image-popup-no-margins" href="images/top-section/highwaist_black_back_1024x1024.jpg">
+              <img class="image-popup-no-margins" src="images/top-section/highwaist_black_back_1024x1024.jpg" alt="">
+            </a>
+          </div>
         </div>
         <div class="col-sm-4 col-xs-12 form-col fixed-cols">
           <div class="product-description">
@@ -209,7 +237,6 @@
 
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="owlcarousel/owl.carousel.min.js"></script>
     <script src="js/app.js"></script>
