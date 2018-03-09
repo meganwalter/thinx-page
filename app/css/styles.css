@@ -67,13 +67,20 @@ a {
   position: fixed;
   width: 33.33333%
 }
+.absolute-cols {
+  position: absolute;
+  bottom: 0;
+}
 .text-col {
   height: 100%;
   left: 0;
 }
 .img-col {
-  height: 100%;
+  height: max-content;
   left: 33.3333%;
+}
+.img-col div {
+  height: 100vh;
 }
 .form-col {
   height: 100%;
@@ -107,6 +114,8 @@ a {
 }
 .image-row p {
   text-align: center;
+  font-size: 10px;
+  font-weight: 300;
 }
 
 /* Mobile Styles */
