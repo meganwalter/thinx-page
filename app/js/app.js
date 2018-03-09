@@ -15,7 +15,7 @@ $('.add-qty').click(function () {
   $('#quantity-m').text(cartQty);
 });
 $('.minus-qty').click(function () {
-  if(cartQty > 0){    
+  if(cartQty > 0){
     cartQty --;
     $('#quantity').text(cartQty);
     $('#quantity-m').text(cartQty);
@@ -50,7 +50,15 @@ function onScroll() {
 window.addEventListener('scroll', onScroll, false);
 onScroll();
 
+function setTopOfRelated() {
+  var $relatedContainer = $('.related-container')[0];
+  var imgHeight = container.getBoundingClientRect().height + 'px';
+  $('.related-container').css('top', imgHeight);
+}
+
 $(document).ready(function () {
   $('#quantity').text(cartQty);
   $('#quantity-m').text(cartQty);
+  setTopOfRelated();
+  window.addEventListener('resize', setTopOfRelated, false);
 });
