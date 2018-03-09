@@ -89,6 +89,8 @@ a {
 .colors-div {
   border: 1px solid black;
   display: inline;
+  text-align: center;
+  height: 25px;
 }
 .colors-div * {
   display: inline;

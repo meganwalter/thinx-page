@@ -1,3 +1,4 @@
+var cartQty = 0;
 $(document).ready(function(){
   $(".owl-carousel").owlCarousel({
     loop:true,
@@ -6,6 +7,19 @@ $(document).ready(function(){
     dotsEach: true,
     items: 1
   });
+});
+
+$('.add-qty').click(function () {
+  cartQty ++;
+  $('#quantity').text(cartQty);
+  $('#quantity-m').text(cartQty);
+});
+$('.minus-qty').click(function () {
+  if(cartQty > 0){    
+    cartQty --;
+    $('#quantity').text(cartQty);
+    $('#quantity-m').text(cartQty);
+  }
 });
 
 var container = $('.img-col')[0];
@@ -35,3 +49,8 @@ function onScroll() {
 
 window.addEventListener('scroll', onScroll, false);
 onScroll();
+
+$(document).ready(function () {
+  $('#quantity').text(cartQty);
+  $('#quantity-m').text(cartQty);
+});

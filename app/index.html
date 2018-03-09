@@ -39,22 +39,35 @@
             <div class="v-center">
               <p>$35.00</p>
               <form>
-                <div>
-
-                  <label for="color">
+                <div class="row col-xs-12">
+                  <div class="color colors-div col-xs-4">
+                    <p>color</p>
+                  </div>
+                  <label for="black" class="col-xs-4  colors-div color-black">
+                  <div>
+                    <p>black</p>
                     <input type="radio" name="black" value="black">
-                  </label>
-
-                  <label for="color">
-                    <input type="radio" name="beige" value="beige">
+                  </div>
+                </label>
+                  <label for="beige" class="col-xs-4  colors-div color-beige">
+                    <div>
+                      <p>beige</p>
+                      <input type="radio" name="beige" value="beige">
+                    </div>
                   </label>
                 </div>
-                <div>
-                  <p>+</p>
-                  <p>quantity (<span id="quantity">1</span>)</p>
-                  <p>-</p>
+                <div class="row col-xs-12">
+                  <div class="colors-div col-xs-2 minus-qty">
+                    <p>-</p>
+                  </div>
+                  <div class="colors-div col-xs-8">
+                    <p>quantity (<span id="quantity-m"></span>)</p>
+                  </div>
+                  <div class="colors-div col-xs-2 add-qty">
+                    <p>+</p>
+                  </div>
                 </div>
-                <div class="">
+                <div class="row col-xs-12">
                   <select class="" name="size">
                     <option value="xs">Size</option>
                     <option value="xs">XS</option>
@@ -114,13 +127,13 @@
                   </label>
                 </div>
                 <div class="row col-xs-12">
-                  <div class="colors-div col-xs-3 minus-qty">
+                  <div class="colors-div col-xs-2 minus-qty">
                     <p>-</p>
                   </div>
-                  <div class="colors-div col-xs-6">
-                    <p>quantity (<span id="quantity">1</span>)</p>
+                  <div class="colors-div col-xs-8">
+                    <p>quantity (<span id="quantity"></span>)</p>
                   </div>
-                  <div class="colors-div col-xs-3 add-qty">
+                  <div class="colors-div col-xs-2 add-qty">
                     <p>+</p>
                   </div>
                 </div>
